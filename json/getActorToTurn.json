@@ -1,0 +1,16 @@
+{
+  "title":"Get an actor to turn",
+  "html": [
+     {"element":"<p class='fcHeading'>Actor action (in the Act() function):</p>"},
+     {"element":"<ul class='objectives'><li>move forward by 4</li><li>when the left arrow key is pressed, turn left by 3 degrees</li><li>when the right arrow key is pressed, turn left by 3 degrees</li></ul>"},
+     {"element":"<p class='fcHeading'>Get the Actor to move</p><p>Add the line:</p>"},
+     {"element":"<p><em>move(4);</em></p>"},
+     {"element":"<p>to the Act() method.</p>"},
+     {"element":"<p>Test for moving:</p>"},
+     {"element":"<ol class='objectives'><li>Click the play button.  The Actor will move in a straight line and stop when it hits the edge.</li></ol>"},
+     {"element":"<p class='fcHeading'>Add the lines to get the Actor to turn with the direction keys:</p>"},
+     {"element":"<img src='https://s3.eu-west-2.amazonaws.com/aws-futurecoders-files/PictureFiles+for+GitHub+Pages/turnRightLeft.PNG' alt='WaterBug turn right and left' />"},
+     {"element":"<p>Test for turning:</p>"},
+     {"element":"<ol class='objectives'><li>run the game and don't press any keys - the Actor should move forward and will get stuck at the right edge.</li><li>run the game and hold the left arrow key down - the Actor will move in an anti-clockwise circle.</li><li>run the game and press the right arrow key - the Actor will move in a clockwise circle.</li><li>run the game and use the right and left arrow keys to move the Actor.</li></ol>"}
+  ]
+}

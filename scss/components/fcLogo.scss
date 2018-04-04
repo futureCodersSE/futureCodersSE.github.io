@@ -1,0 +1,21 @@
+.fcLogo{
+	margin:0;
+	padding:0;
+	width:auto;
+	&-header{
+		height:$header-height * 0.9;
+		&-md{ height:$header-height * 0.7; }
+		&-sm{ height:$header-height * 0.5; }
+	}
+	&-content{
+		width:$main-width * 0.4;
+		margin-bottom:($main-height * 0.05);
+	}
+	&-footer{
+		height:($footer-height * 0.9);
+	}
+	&-image{
+		max-height:100%;
+		max-width:100%;
+	}
+}

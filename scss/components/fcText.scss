@@ -1,0 +1,16 @@
+.fcText{
+	color:$brand-primary;
+	&-large{
+		font-size:$font-size-lg;
+	}
+	&-super{
+		vertical-align:super;
+		font-size:$font-size-xs;
+	}
+	&-main{
+		color:$brand-secondary;
+	}
+	&-bold{
+		font-weight:bold;
+	}
+}

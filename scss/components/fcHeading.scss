@@ -1,0 +1,19 @@
+.fcHeading{
+	display:block;
+	font-weight:bold;
+	margin:0;
+	padding:0;
+	&-xl{
+		font-size:$font-size-xxl;
+		font-weight:bold;
+	}	
+	&-large{
+		font-size:$font-size-xl;
+	}
+	&-medium{
+		font-size:$font-size-lg;
+	}
+	&-small{
+		font-size:$font-size-base;
+	}
+}

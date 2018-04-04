@@ -1,0 +1,100 @@
+.fcCardPanel{
+	width:($main-width);
+	text-align:center;
+	&::after{
+		clear:both;
+	}
+}
+.fcCard{
+	width:($main-width * 0.245);
+	height:($main-height * 0.75);
+	text-align:center;
+	color:$font-color-secondary;
+    border: 1px solid $brand-secondary;
+    box-shadow: 5px 10px $brand-primary;
+	margin:$main-width * 0.002;
+	margin-bottom:$main-width * 0.05;
+	float:left;
+	background-color:#FFFFFF;
+	@media all and (orientation:portrait){
+		width:($main-width);
+		display:block;
+	}
+	&-header{
+		height:($main-height * 0.1);
+		background-color:$brand-secondary;
+		display:flex;
+		flex-direction:column;
+		justify-content:center;		
+		&-primary{
+			background-color:$brand-primary;
+		}
+		&-secondary{
+			background-color:$brand-secondary;
+		}
+		&-tertiary{
+			background-color:$brand-tertiary;
+		}
+		&-quad{
+			background-color:$brand-quad;
+		}
+	}
+	&-content{
+		height:($main-height * 0.6);
+		color: $font-color-primary;
+		font-size: $font-size-base;
+		padding: 5px;	
+		&-top{
+			height:($main-height * 0.3);
+			overflow:auto;
+		}
+		&-bottom{
+			height:($main-height * 0.25);	
+			display:flex;
+			flex-direction:column;
+			justify-content:center;
+			overflow:hidden;
+		}
+	}
+	&-footer{
+		height:($main-height * 0.05);
+		color:$font-color-primary;
+		display:flex;
+		flex-direction:column;
+		justify-content:center;
+	}
+}
+.fcTitle{
+	&::before{
+		display:block;
+		content:"";
+	}
+	width:($main-width);
+	height:($main-height * 0.1);
+}
+
+.fcBlock{
+	display:block;
+	&::before{
+		display:block;
+	}
+	&::after{
+		display:block;
+	}
+}
+
+.fcAbout{
+	width:$main-width;
+	text-align:center;
+	background-color:#000000;
+	overflow:hidden;
+	margin-bottom:($main-height * 0.05);
+	&::after{
+		display:block;	
+	}
+
+}
+
+fcImage{
+	max-height:100%;
+}

@@ -1,0 +1,30 @@
+{
+  "title":"Get an actor to change its image",
+  "html": [
+     {"element":"<div class='fcHeading-large'>You can change the sprite picture for an actor using the instruction:</div>"},
+     {"element":"<p>setImage(path/filename);</p>"},
+     {"element":"<p>You can practice setting an actor's image using some <em>worm</em> pictures that have been prepared for you.</p>"},
+     {"element":"<p><a href='https://s3.eu-west-2.amazonaws.com/aws-futurecoders-files/PictureFiles+for+GitHub+Pages/GreenfootHow-Tos/images.zip'>Get the pictures here - unzip the folder and copy the images into your Greenfoot scenario folder, in the images folder</a></p>"},
+     {"element":"<p>Open the editor for your actor.</p>"},
+     {"element":"<p>In the act() method, add the instruction to set the image (see above).  You must specify where the image is in relation to the actor.  Because the code is in the actor, you do not need to put the actor's name in front of setImage() this time.</p>"},
+     {"element":"<p>e.g.  setImage('images/red-worm-right.png');</p>"},
+     {"element":"<p>Once the game is running you can add the instruction to change the image wherever it is appropriate.</p>"},
+     {"element":"<p class='fcHeading'>Moving an actor with a set of images for direction</p>"},
+     {"element":"<p>If you have a set of images to indicate direction then you will not want to rotate the actor to go in different directions.  So, instead of using setRotation() and move() you will use setLocation().  You will need to check where the actor is now, then set it's location to the next place it wants to get to:</p>"},
+     {"element":"<p class='fcHeading'>TRY THIS</p>"},
+     {"element":"<p>Add an instruction into the act() method for your actor, so that when you click the Play button, the actor will change its image.  How about using 'images/red-worm-right.png'?  Reset the game and the worm has the original image, click on Play and the worm's nose and antennae become red.</p>"},
+     {"element":"<pre>\npublic void act()\n\n\t{\n\t\t//get where the actor is now\n\t\tint x = getX();\n\t\tint y = getY();"},
+     {"element":"\n\t//for the keypress, change the actor's image\n\t//check that there isn't an obstacle where the actor wants to move to\n\t//if no obstacle, set a new location 10 places in the required direction"},
+     {"element":"\n\tif(Greenfoot.isKeyDown('up')){\n\t\tsetImage('images/red-worm-up.png');\n\t\tsetLocation(x, y-10);\n\t}"},
+     {"element":"\n\telse if(Greenfoot.isKeyDown('down')){\n\t\tsetImage('images/red-worm-down.png');\n\t\tsetLocation(x, y+10);\n\t}\n</pre>"},
+     {"element":"<p><strong>If you need to find out if there is an obstacle (Shamrock or other) you can replace setLocation(x-10, y) with this code (you will need to adjust it for each direction):</strong></p>"},
+     {"element":"<pre>\n\tif(getOneObjectAtOffset(-10,0,Shamrock.class) == null){\n\t\tsetLocation(x-10, y); \n\t} \n</pre>"}
+  ]
+}
+
+
+
+
+
+
+

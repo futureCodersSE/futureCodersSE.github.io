@@ -1,0 +1,63 @@
+/* set to 10% of window height or auto height for portrait mode */
+/* footer cells are a third of the width of the window in       */
+/* landscape mode and full width in portrait mode               */
+
+.fcFooter{
+	width:$main-width;
+	height:$footer-height;	
+	padding:0;
+	background-color:#FFFFFF;
+	border-top-style:solid !important;
+	border-width:$border-primary;
+	border-color:$brand-primary;
+	text-align:center;
+	font-size:$font-size-xs;
+	height:auto;
+	@media all and (orientation:landscape){
+		z-index:1;	
+		position:fixed;
+		bottom:0;
+		left:0;
+	}
+	&::before{
+		clear:both;
+	}
+	&::after{
+		clear:both;
+	}
+}
+
+.fcFooterCell{		
+	float:left;
+	width:($main-width * 0.33);
+	min-width:($main-width * 0.33);
+	@media all and (orientation:portrait){
+		width:$main-width;
+		height:auto;
+		padding-top:10px;
+		float:none;
+	}
+	&-left{
+		text-align:left;
+		@media all and (orientation:portrait){
+			text-align:center;
+		}
+	}
+	&-centre{
+		text-align:center;
+	}
+	&-right{
+	float:right;
+		text-align:right;
+		@media all and (orientation:portrait){
+			text-align:center;
+		}
+	}
+}
+.fcFooterPic{
+	height:($footer-height * 0.8);
+	margin:auto;
+	&-socialIcon{
+		height:($footer-height * 0.5);
+	}
+}

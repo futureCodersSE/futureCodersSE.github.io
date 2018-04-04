@@ -1,0 +1,21 @@
+{
+  "title":"Get an actor to move in response to key presses",
+  "html": [
+     {"element":"<p>To get an Actor to move only when a key is pressed, we need to put a condition on moving.</p>"},
+     {"element":"<p>Let's start by getting an actor to move only when the right arrow key is pressed (as this is usually the direction that the Actor is facing).</p>"},
+     {"element":"<p>We need to add an <em>if</em> statement before the instruction to move so that it will only move if a particular thing has happened.  In our case, the thing that needs to happen is that the right arrow key is pressed.</p>"},
+     {"element":"<pre>\n\tif(Greenfoot.isKeyDown('right')){\n\t\tmove(4);\n\t}\n</pre>"},
+     {"element":"<p>Test for moving:</p>"},
+     {"element":"<ol><li>Place the Actor in the world.  Click Play.  The Actor should not move.</li><li>Place the Actor in the world.  Click Play.  Press the right arrow key.  The Actor should move right.</li></ol>"},
+     {"element":"<p>Now let's get the Actor to move left when the left arrow key is pressed and right when the right arrow key is pressed.</p>"},
+     {"element":"<p>To do this we will need to tell it to face the other way.  We will do this by setting its rotation to 180 for left and to 0 for right.</p>"},
+     {"element":"<pre>\n\tif(Greenfoot.isKeyDown('right')){\n\t\tsetRotation(0);\n\t\tmove(4);\n\t} \n\telse if(Greenfoot.isKeyDown('left')){\n\t\tsetRotation(180);\n\t\tmove(4);\n\t}\n</pre>"},
+     {"element":"<p>Test for moving right and left:</p>"},
+     {"element":"<ol><li>Place the Actor in the world and click the Play button.  The Actor will not move.</li><li>Place the Actor in the world and click the Play button.  Press the right arrow key.  The Actor will move to the right.</li><li>Place the Actor in the world and click the Play button.  Press the right arrow key.  The Actor will move to the right.</li><li>Place the Actor in the world and click the Play button.  Press the left arrow key, then press the right arrow key.  The Actor will continue to move in the right direction for the arrow key pressed.</li></ol>"},
+     {"element":"<p class='fcHeading'>Now add the other two directions:</p>"},
+     {"element":"<pre>\n\tif(Greenfoot.isKeyDown('right')){\n\t\tsetRotation(0);\n\t\tmove(4);\n\t}\n\telse if(Greenfoot.isKeyDown('left')){\n\t\tsetRotation(180);\n\t\tmove(4);\n\t}\n\telse if(Greenfoot.isKeyDown('up')){\n\t\tsetRotation(270);\n\t\tmove(4);\n\t}\n\telse if(Greenfoot.isKeyDown('down')){\n\t\tsetRotation(90);\n\t\tmove(4);\n\t}\n</pre>"},
+     {"element":"<p>Test for arrow keys controlling the Actor:</p>"},
+     {"element":"<ol><li>Place an Actor in the world and click the Play button.  The actor will move right when the right arrow key is pressed, left when the left arrow key is pressed, up when the up arrow key is pressed and down when the down arrow key is pressed.  When no key is pressed it stays still.</li></ol>"},
+     {"element":"<p><strong>TRY THIS</strong> change the keys that control the Actor to a (left) s (down) d (right) and w (up).</p>"}
+  ]
+}

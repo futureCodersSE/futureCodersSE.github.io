@@ -1,0 +1,66 @@
+/* CSS styling for form fields                  */
+
+input{
+    width: ($modal-width * 0.9);
+	padding:1rem;
+	margin-bottom:0.1rem;
+	@media all and (orientation:portrait){
+		width:($main-width * 0.9);
+		height:($main-height * 0.1);
+	}
+}
+
+input[type=text], input[type=email], select {
+    display: inline-block;
+    border: 1px solid $brand-primary;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type=submit] {
+    background-color: $brand-primary;
+    color: rgb(255,255,255);
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    opacity: 0.5;
+}
+
+.fcTextArea{
+    width:($modal-width * 0.9);
+	height:($modal-height * 0.4);
+	font-family:inherit;
+	font-size:$font-size-sm;
+    display: inline-block;
+	padding:1rem;
+	margin-bottom:1rem;
+    border: 1px solid $brand-primary;
+    border-radius: 4px;
+    box-sizing: border-box;
+	@media all and (orientation:portrait){
+		width:($main-width * 0.9);
+		height:($main-height * 0.4);
+	}
+}
+
+.fcForm {
+    border-radius: 4px;
+    background-color: rgb(0,0,0);
+    padding: 1rem;
+	text-align:left;
+}
+
+.buyNowButton{
+	height:auto;
+	margin:auto;
+	padding:20px;
+	background-color:$brand-primary;
+	color:#ffffff;
+	font-size:$font-size-xl;
+	font-weight:bold;
+	text-align:center;
+	border-radius:5px;
+}

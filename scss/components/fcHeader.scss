@@ -1,0 +1,51 @@
+/* header set to 10% of screen height */ 
+
+.fcHeader{
+	background-color:$brand-nav;
+	color:#ffffff;
+	width:100%;
+	height:$header-height;
+	padding:0;
+	margin:0;
+	text-align:center;
+	z-index:1;	
+	position:fixed;
+	top:0;
+	right:0;
+	@media all and (orientation:portrait){
+		height:auto;
+	}	
+	&-left{
+		max-height:$header-height;
+		text-align:left;
+		line-height:$header-height;
+		padding-left:($main-width * 0.03);
+		float:left;
+		@media all and (orientation:landscape){		
+			min-width:($main-width * 0.33);
+		}	
+	}
+	&-center{
+		min-width:($main-width * 0.33);
+		max-height:$header-height;
+		text-align:center;
+		line-height:$header-height;
+		padding-left:($main-width * 0.03);
+		float:left;
+		@media all and (orientation:portrait){
+			display:none;
+		}		
+	}
+	&-right{
+		max-height:$header-height;
+		text-align:right;
+		line-height:$header-height;
+		padding-right:($main-width * 0.03);
+		@media all and (orientation:landscape){
+			min-width:($main-width * 0.33);		
+		}
+	}
+	&::after{
+		clear:both;
+	}
+}

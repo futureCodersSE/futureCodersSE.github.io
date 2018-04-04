@@ -1,0 +1,161 @@
+/* miscellaneous styles */
+
+/* default styles for whole site */
+.bodyStyles{
+	background-color:#ffffff;
+	line-height:normal;
+	font-family:Helvetica, 'Open Sans', sans-serif;
+	font-size:12pt;
+	@media all and (orientation:landscape) and (min-width:$breakpoint-lg){
+		font-size:14pt;
+	}
+	@media all and (orientation:landscape) and (min-width:$breakpoint-md) and (max-width:$breakpoint-lg - 1){
+		font-size:12pt;
+	}
+	@media all and (orientation:landscape) and (min-width:$breakpoint-sm) and (max-width:$breakpoint-md - 1){
+		font-size:10pt;
+	}
+	@media all and (orientation:landscape) and (min-width:$breakpoint-xs) and (max-width:$breakpoint-sm - 1){
+		font-size:8pt;
+	}
+	@media all and (orientation:portrait){
+		font-size:8pt;
+	}
+}
+
+a:link{
+	text-decoration:none;
+	font-weight:bold;	
+}
+a:visited{
+	text-decoration:none;
+}
+a:hover{
+	color:$brand-primary;
+	opacity:0.3;
+	text-decoration:none;
+}
+a:active {
+	text-decoration:none;
+}
+
+.fcInsertPanelHeader{
+	position:relative;
+	width:$main-width;
+	text-align:center;
+}
+.fcInsertPanelClose{
+	border:none;
+	display:inline-block;
+	outline:0;
+	padding:8px 16px;
+	vertical-align:middle;
+	overflow:hidden;
+	text-decoration:none;
+	color:rgb(0,0,0);
+	font-weight:bold;
+	font-size:$font-size-xxl;
+	text-align:center;
+	cursor:pointer;
+	white-space:nowrap;
+	position:absolute;
+	top:0;
+	right:0;
+}
+
+.profile{
+	float:left;
+	width:($main-width * 0.2);
+	margin-top:($main-height * 0.02);
+	margin-bottom:($main-height * 0.02);	
+	@media all and (orientation:portrait){
+		width:$main-width;
+	}
+	&::after{
+		clear:both;
+	}
+}
+.profilePanel{
+	width:$main-width;
+	@media all and (orientation:portrait){
+		height:auto;
+	}
+	&::after{
+		display:block;	
+	}
+
+}
+.scrollable{
+	width:($modal-width * 0.9);
+	height:($modal-height * 0.2);
+	background-color:#ffffff;
+	color:#000000;
+	overflow:auto;
+	margin:0 auto;
+	@media all and (orientation:portrait){
+		width:($main-width * 0.9);
+	}
+}
+
+.videoBox{
+	width:100%;
+}	
+
+.pdfModal{
+	width:$modal-width;
+	height:($modal-height * 0.8);
+	@media all and (orientation:portrait){
+		width:($main-width * 0.9);
+		height:($portrait-content-height * 0.85);
+	}
+}
+
+.dropDown {
+    position: relative;
+    display: inline-block;
+	&-content{
+		display: none;
+		position: absolute;
+		background-color: $brand-nav;
+		width: ($main-width * 0.25);
+		height:auto;
+		box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+		padding: 12px 16px;
+		z-index: 1;
+		@media all and (orientation:portrait){
+			left:0;
+			min-width: ($main-width);
+		}
+	}
+}
+
+.footnote{
+	font-size:$font-size-xs;
+}
+
+.divider{
+	border-top:$border-primary;
+	margin-bottom:$main-height * 0.05;
+}
+
+.codeSnippet{
+	background-color:#EEEEEE;
+	font-size:$font-size-base;
+}
+
+.fcTutorialHeading{
+	width:$main-width;
+	padding-top:$header-height;
+	margin-left:0px;
+	font-size:$font-size-xxl;
+	background-color:$brand-nav;
+	color:$font-color-secondary;
+}
+
+.objectives{
+	font-size:$font-size-sm;
+}
+
+ul.objectives{
+	list-style-type:default;
+}

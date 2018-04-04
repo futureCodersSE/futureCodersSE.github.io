@@ -1,0 +1,29 @@
+{
+  "title":"Create a new scenario",
+  "html": [
+     {"element":"<div class='fcHeading-large'>Create a new scenario and a completely new Actor.</div>"},
+     {"element":"<ol><li>Close all open scenarios and create a new scenario:</li></ol>"},
+     {"element":"<ul><li>Go to the Scenario menu and choose New Java Scenario...</li></ul>"},
+     {"element":"<ol><li>Open the World and change the name of the world to something that describes your game:</li></ol>"},
+     {"element":"<img src='https://s3.eu-west-2.amazonaws.com/aws-futurecoders-files/PictureFiles+for+GitHub+Pages/GreenfootHow-Tos/NewWorld.PNG' alt='New world code' /><"},
+     {"element":"<ol><li>Compile your new world to check that it works</li><li>Create a new Actor without an image</li></ol>"},
+     {"element":"<ul><li>Right click on the Actor box and select New Subclass...</li><li>Select the Image Category that most closely describes the sort of Actor you are making (is it an animal, some transport, etc)</li><li>Select <em>Unspecified</em> as the Library image</li><li>Give it a name (e.g. Spaceman)</li><li>Click OK.</li></ul>"},
+     {"element":"<img src='https://s3.eu-west-2.amazonaws.com/aws-futurecoders-files/PictureFiles+for+GitHub+Pages/GreenfootHow-Tos/NewActor.PNG' alt='Create a new actor />"},
+     {"element":"<ol><li>Add one Actor to the world</li></ol>"},
+     {"element":"<ul><li><Open your new world (e.g. SpaceWorld) in the editor</li><li>Find the line: super(600, 400, 1);</li><li>Beneath this line, add the instruction to add your new actor to the world.  As the world is 600 wide and 400 high, if we add the new actor at 300, 200 then it should be in the middle of the screen."},
+     {"element":"<pre>\n\tSpaceman spaceman = new Spaceman();\n\taddObject(spaceman, 300, 200);\n</pre></li></ul>"},
+     {"element":"<p>As it has no image, it will be a <em>green foot</em>.</p>"},
+     {"element":"<img src='https://s3.eu-west-2.amazonaws.com/aws-futurecoders-files/PictureFiles+for+GitHub+Pages/GreenfootHow-Tos/newScenario.PNG' alt='New scenario' />"},
+     {"element":"<p class='fcHeading'>To give your actor a set of <em>costumes</em> - see the How To Guide on changing an actor's image.</p>"}
+  ]
+}
+
+
+
+
+
+
+
+
+
+

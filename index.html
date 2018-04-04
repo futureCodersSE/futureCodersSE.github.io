@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>@futureCodersSE Workshops Home</title>
+		<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1">
+		<meta name="description" content="@futureCodersSE nurturing coding talent through work-experience - workshops tutorials">
+		<meta name="keywords" content="work experience, coding, learning, @futureCodersSE">
+		<link rel="icon" href="images/fcIcon.ico" type="image/x-icon" />
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans">
+		<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">	
+		<link rel="stylesheet" href="css/fcStyles.css" />
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	</head>
+	<body class="bodyStyles">
+		<!-- header area -->
+		<div class="fcHeader" >
+			<div class="fcHeader-left">
+				<div class="dropDown">
+					<span class="fcLink" onclick="toggleDropDown()"><i class="fa fa-bars" aria-hidden="true"></i></span>
+					<div class="dropDown-content">
+						<div class="fcLink fcLinkNav"><span onclick = "openPage('index.html')" >Home</span></div>
+						<div class="fcLink fcLinkNav"><span onclick = "openPage('greenfoot.html')">Greenfoot</span></div>
+						<div class="fcLink fcLinkNav"><span  onclick = "openPage('beautifulData.html')">Beautiful Data</span></div>
+						<div class="fcLink fcLinkNav"><span  onclick = "openPage('alexaSkillshtml')">Alexa Skills</span></div>
+					</div>	
+				</div>
+			</div>
+			
+			<div class="fcHeader-center">
+				<span class="fcLink" onclick="openPage('intro')">futureCodersSE Workshop Tutorials</span>
+			</div>
+
+			<div class="fcHeader-right">
+				<span class="" onclick="">info@futureCoders.org.uk</span>
+				<span class="fcSocialLink"><span title="@futureCodersSE" class="fcLink" onclick="openInNewTab('https://www.facebook.com/futureCodersSE/')"><i class="fa fa-facebook-square" aria-hidden="true" ></i></span></span>
+				<span class="fcSocialLink"><span title="@futureCodersSE" class="fcLink" onclick="openInNewTab('https://www.twitter.com/futureCodersSE/')"><i class="fa fa-twitter-square" aria-hidden="true"></i></span></span>
+			</div>
+		</div>
+	<!-- content area add landing page content here  -->
+		<div class="fcContent">
+			<!-- Tutorial links -->
+			<h1>Welcome to the futureCodersSE Coding workshops tutorial site!</h1>
+			<p>Find here a set of tutorial projects designed to help those who attend our workshops but available to anyone.</p>
+			<hr/>
+			<p>Select your topic from the list below.</p>
+			<h2><span class="fcLink" onclick="openPage('greenfoot.html')">Greenfoot Games</span></h2>
+			<h2><span class="fcLink" onclick="openPage('beautifulData.html')">Beautiful Data</span></h2> 
+			<h2><span class="fcLink" onclick="openPage('alexaSkills.html')">Alexa Skills</span></h2>
+		</div>
+
+		<!-- footer area -->
+			<div class="fcFooter">
+				<div class="fcFooterCell fcFooterCell-left">
+					<p>Dragon Co-working, St George Hotel, 6-8 New Road Avenue, CHATHAM, Kent ME4 6BB</p>
+					<p>Contact phone:  07791 769048</p>
+				</div>
+				<div class="fcFooterCell fcFooterCell-centre"><img class="fcLogo fcLogo-footer" src="images/logos/fcLogo-v6a.png" alt="@futureCodersSE"/></div>	
+				<div class="fcFooterCell fcFooterCell-right">
+					<span class="fcHeading-xl"><span class="fcSocialLink" onclick = "openPage('intro')" ><i class="fa fa-home" aria-hidden="true"></i></span></span>
+				</div>
+			</div>
+					
+
+<!-- scripts -->	
+	<script src="js/fcTutorialScript.js"></script>	
+</body>
+</html>

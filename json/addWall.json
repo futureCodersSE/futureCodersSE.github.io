@@ -1,0 +1,15 @@
+{
+  "title":"Add a 'wall' of objects",
+  "html": [
+     {"element":"<div class='fcHeading'How to add a new actor, e.g. a Shamrock, and create a wall of Shamrocks on the game board.</div>"},
+     {"element":"<p>For this you will need to write some code in your world class, to add a wall of shamrocks.</p>"},
+     {"element":"<p class='fcHeading'>Add wall code</p>"},
+     {"element":"<p>To add a line of objects, all the same.  You should use a LOOP.  This will repeat an instruction a set number of times, often with something changing each time.</p>"},
+     {"element":"<p>For this exercise we are going to write a LOOP to add Shamrocks at a set of co-ordinates where the first co-ordinate (the x co-ordinate) is always the same but the second co-ordinate (the y co-ordinate) changes by 10 each time.</p>"},
+     {"element":"<p>To do this we use a for() loop and we tell it to start y at 0, keep looping until y gets to 300 and add 10 onto y each time:</p>"},
+     {"element":"<pre>\n\t//create a loop to add a vertical wall of Shamrocks from the top to 300 down\n\tfor(int y = 0; y &lt; 300; y=y+10){\n\t\taddObject(new Shamrock(), 500, y);\n\t}\n</pre>"},
+     {"element":"<p class='fcHeading'>Now try a horizontal wall starting 50 across and ending 300 across, and at 250 down</p>"},
+     {"element":"<p>Do do this we use a for() look again and we tell it to start x at 50, keep looping until x gets to 300 and add 10 onto x each time.</p>"},
+     {"element":"<pre>\n\t//create a loop to add a horizontal wall of Shamrocks\n\tfor(int x=50; x &lt; 300; x=x+10){\n\t\taddObject(new Shamrock(), x, 250);\n\t}\n</pre>"}
+  ]
+}

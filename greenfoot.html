@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Greenfoot Workshops Home</title>
+		<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1">
+		<meta name="description" content="@futureCodersSE nurturing coding talent through work-experience - workshops tutorials">
+		<meta name="keywords" content="work experience, coding, learning, @futureCodersSE">
+		<link rel="icon" href="images/fcIcon.ico" type="image/x-icon" />
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans">
+		<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">	
+		<link rel="stylesheet" href="css/fcStyles.css" />
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	</head>
+	<body class="bodyStyles">
+		<!-- header area -->
+		<div id="fcHeader" class="fcHeader" >
+			<div class="fcHeader-left">
+				<div class="dropDown">
+					<span class="fcLink" onclick="toggleDropDown()"><i class="fa fa-bars" aria-hidden="true"></i></span>
+					<div class="dropDown-content">
+						<div class="fcLink fcLinkNav"><span onclick = "openPage('index.html')" >Home</span></div>
+						<div class="fcLink fcLinkNav"><span onclick = "openPage('greenfoot.html')">Greenfoot</span></div>
+						<div class="fcLink fcLinkNav"><span  onclick = "openPage('beautifulData.html')">Beautiful Data</span></div>
+						<div class="fcLink fcLinkNav"><span  onclick = "openPage('alexaSkills.html')">Alexa Skills</span></div>
+					</div>	
+				</div>
+			</div>
+			
+			<div class="fcHeader-center">
+				<span class="fcLink" onclick="openPage('index.html')">futureCodersSE Greenfoot Tutorials</span>
+			</div>
+
+			<div class="fcHeader-right">
+				<span class="" onclick="">info@futureCoders.org.uk</span>
+				<span class="fcSocialLink"><span title="@futureCodersSE" class="fcLink" onclick="openInNewTab('https://www.facebook.com/futureCodersSE/')"><i class="fa fa-facebook-square" aria-hidden="true" ></i></span></span>
+				<span class="fcSocialLink"><span title="@futureCodersSE" class="fcLink" onclick="openInNewTab('https://www.twitter.com/futureCodersSE/')"><i class="fa fa-twitter-square" aria-hidden="true"></i></span></span>
+			</div>
+		</div>
+	<!-- content area add landing page content here  -->
+		<div class="fcContent">
+			<!-- Tutorial links -->
+			<h1>Greenfoot Tutorials</h1>
+			<p>Greenfoot tutorials for use in futureCodersSE Coding Workshops</p>
+			<hr/>
+			<h2><span class="fcLink" onclick = "scrollToAnchor('getStarted')">1.  Getting started with Greenfoot scenarios</span></h2>
+			<h2><span class="fcLink" onclick = "scrollToAnchor('spaceRocks')">2.  Space Rocks Game</span></h2>	
+			<h2><span class="fcLink" onclick = "scrollToAnchor('waterBug')">3.  Water Bug Game</span></h2>
+			<h2><span class="fcLink" onclick = "scrollToAnchor('mazeGame')">4.  Maze Game pairs project</span></h2>
+			<h2><span class="fcLink" onclick = "scrollToAnchor('howTo')">5.  How To Guides</span></h2>
+			<hr/>
+			
+			<!-- Anchors -->
+			<!-------------------------------------------------------------------------------------------------->
+			<!-- getting started tutorial -->
+			<div id="getStarted" class="fcTutorialHeading"  >Wombat and fish project - get started with Greenfoot</div>
+			<div class="fcContent-tutorial">
+				<p>Download Greenfoot from <span class="fcLink" onclick="openInNewTab('https://www.greenfoot.org/download')">here: </span> and follow the instructions.</p>
+				<p>Open the tutorial page <span class="fcLink" onclick="openInNewTab('https://www.greenfoot.org/doc/tut-1')">Tutorial 1: Interacting with Greenfoot</span></p>
+				<p>You will be asked to download the Wombats scenario.  A <em>scenario</em> is a Greenfoot program and you will download the folder containing all the files you need to make this program.</li>
+				<p>Make a folder to store your scenarios in.  Make sure this is somewhere you can find it.  Your Documents folder might be a good place.
+				<img src="https://s3.eu-west-2.amazonaws.com/aws-futurecoders-files/PictureFiles+for+GitHub+Pages/Scenarios+Folder.PNG" alt="Scenarios Folder" />
+				<p>Move the Wombats scenario to your Scenarios Folder and open it. </p>
+				<img src="https://s3.eu-west-2.amazonaws.com/aws-futurecoders-files/PictureFiles+for+GitHub+Pages/WombatsScenario.PNG" alt="Wombats.gFar" />
+				<p>(you might see a message saying that the versions do not match and you need to update the code.  Click 'Yes, update my code'. </p>
+				<img src="https://s3.eu-west-2.amazonaws.com/aws-futurecoders-files/PictureFiles+for+GitHub+Pages/UpdateVersion.PNG" alt="UpdateCode" />
+				<p>You might also be asked to allow it through the firewall and you will need to allow access.</p>
+				<p>Once you have done this, you don't need the <em>wombats.gfar file anymore</em>.  You will have a folder called wombats which contains everything you need.  Delete the file <strong>wombats.gfar</strong>.</p>
+
+
+				<p>To open the wombats project in the future, open the <strong>project.greenfoot</strong> file in the wombats folder. </p>
+				<img src="https://s3.eu-west-2.amazonaws.com/aws-futurecoders-files/PictureFiles+for+GitHub+Pages/scenarioFolder.PNG" alt="Scenario folder" />
+				<span class="fcHeading-large" id="familiariseyourselfwithgreenfootandthewombatsscenario">Familiarise yourself with Greenfoot and the Wombats scenario.</span>
+				<p><strong>Work through the tutorial</strong> then try this:  </p>
+
+				<p>Add four wombats and ten leaves as shown below. then click Run to run the game: </p>
+				<img src="https://s3.eu-west-2.amazonaws.com/aws-futurecoders-files/PictureFiles+for+GitHub+Pages/WombatsGame1.PNG" alt="WombatsGame1" />
+				<p>You might end up with less wombats after the leaves have been eaten - this is because one wombat has caught up with another and is on top of it.</p>
+
+				<span class="fcHeading-large" id="populatetheworldwhenitisreset">Populate the world when it is reset</span>
+				<p>When you click on the Reset button, the world remakes itself.  This code sets up the WombatWorld from scratch:</p>
+
+				<div class="codeSnippet"><pre>
+	/**  
+	 * Create a new world with 8x8 cells and  
+	 * with a cell size of 60x60 pixels  
+	 */  
+	public WombatWorld()   
+	{  
+		super(8, 8, 60);          //this makes a new grid with 8 rows and 8 columns_  
+		setBackground("cell.jpg");     //this sets the background to the orangey colour_  
+	}  
+				</pre></div>
+
+				<p><strong>Can you add an extra line after the setBackground line that will populate the world <em>(the command to do this is populate()</em></strong></p>
+				<p>Now when you click Reset, the world will be set up with the right number of cells, the right background and a set of two wombats and six leaves in the positions defined in the populate() method (look at the code to try to get an idea of how this is done).</p>
+
+				<span class="fcHeading-large">Can you decipher some Java code?</span>
+				<p>In the tutorial you learnt how to run the populate() method to add a set of characters to the world.  You have now learnt how to run this method when the game starts and resets.</p>
+
+				<img src="https://s3.eu-west-2.amazonaws.com/aws-futurecoders-files/PictureFiles+for+GitHub+Pages/WorldCode.PNG" alt="World Code" />
+				<p>Can you change the code in populate() so that when you run it, you will see this:
+				<img src="https://s3.eu-west-2.amazonaws.com/aws-futurecoders-files/PictureFiles+for+GitHub+Pages/WombatsGame1.PNG" alt="New populate" /></p>
+				<p><em>Remember - right click and then select populate() to run the populate() method.</em></p>
+
+				<p>Now change the way that the wombat acts.</p>
+				<p>Run populate() to get some wombats and leaves on the game board.  Then click the Run button.  The wombats will move to the edge of the board then turn left.  They get stuck around the edge of the board.</p>
+				<p>Let's change the code so that they turn back  (so if the wombat was going right and hits the edge it will turn round and go left.  Then when it hits the other edge it will turn round and go right.</p>
+				<p>Have a look at the code in the wombat.  The Act() method describes how the wombat will act.</p>
+
+				<div class="codeSnippet"><pre>
+	public void act()  
+	{  
+		if(foundLeaf()) {  
+			eatLeaf();  
+		}  
+		else if(canMove()) {  
+			move();  
+		}  
+		else {  
+			turnLeft();  
+		}  
+	}  
+				</pre></div>
+
+				<p><strong>Can you change the code so that the wombat turns left twice?</strong></p>
+				<p>Try it out.</p>
+
+				<p>Have a look at the code that turns the wombat left (it is called turnLeft())</p>
+				<div class="codeSnippet"><pre>
+	//Turns towards the left.
+	public void turnLeft()
+	{
+		switch(direction) {
+			case SOUTH :
+				setDirection(EAST);
+				break;
+			case EAST :
+				setDirection(NORTH); 
+				break; 
+			case NORTH :
+				setDirection(WEST);
+				break; 
+			case WEST :
+				setDirection(SOUTH);
+				break;
+			}
+		}
+	}
+				</pre></div>
+
+				<p><strong>Can you write a new method below this one that looks very similar but is called turnRight()?  Then change the way the wombat acts so that it now turns right when it hits the edge.</strong></p>
+				<span class="fcHeading-large">Have a go at making your own game - Wombat and fish.</span>
+				<img src="https://s3.eu-west-2.amazonaws.com/aws-futurecoders-files/PictureFiles+for+GitHub+Pages/WombatFish.PNG" alt="Wombat and fishes" />
+				<p>When the wombat hits a fish it eats it then turns right.</p>
+				<p>It turns right at the edges.</p>
+				<p>When it hits the leaf it eats it, and then makes the game stop.</p>
+				Hint: <em>only Greenfoot can stop the game (not an actor or a world) - look in the Help - Greenfoot Class Documentation in the Greenfoot class for the instruction to stop the game</em>.</p>
+
+				<p><strong>TRY IT OUT</strong>  </p>
+
+				<p><strong>THEN</strong>
+				<p>Add another Actor (an ant) and add a trail of ants to be eaten on the way to the fishes.</p>
+				Hint: you can use a loop to add a line of actors.  This code will produce the picture below it.  </p>
+
+				<div class="codeSnippet"><pre>    
+	int x;  
+	int y;  
+	for(x=2; x&lt;=5; x++){     //add a line of ants from wombat to first fish  
+		addObject(new Ant(), x, 2);  
+	}  
+	for(y=3; y&lt;=7;y++){     //add a line of ants from first fish to second fish  
+		addObject(new Ant(), 6, y);  
+	}  
+	for(x=3; x&lt;=5;x++){     //add a line of ants along the bottom edge to third fish  
+		addObject(new Ant(), x, 7);  
+	}      
+	for(x=0; x&lt;=1;x++){     //add a line of ants along the bottom edge from third fish to left corner  
+		addObject(new Ant(), x, 7);  
+	}          
+				</pre></div>
+
+				<img src="https://s3.eu-west-2.amazonaws.com/aws-futurecoders-files/PictureFiles+for+GitHub+Pages/AntsAdded.PNG" alt="With first set of ants added" />
+				<span class="fcHeading-large">If you have done all this (and the wombat clears all objects on the page before it stops) WELL DONE!</span>
+				<p>You can download a working version here:  <span class="fcLink" onclick="openinNewTab('https://s3.eu-west-2.amazonaws.com/aws-futurecoders-files/PictureFiles+for+GitHub+Pages/wombats.jar')">wombats</span>
+				<p><span class="fcHeading-large fcLink" onclick="scrollToTop()">Back to top</span></p>
+				<div class="divider"></div><hr/>
+			</div>
+
+			<!-------------------------------------------------------------------------------------------------->			
+			<div id="spaceRocks" class="fcTutorialHeading"  >Space Rocks project</div>
+			<div class="fcContent-tutorial">
+				<p class="fcHeading">Before you start you should know:</p>
+				<ul class="objectives">
+					<li>how to open a scenario</li>
+					<li>how to run a scenario</li>
+					<li>how to add actors to the world at given co-ordinates</li>
+					<li><em>how to create a new type of actor</em></li>
+					<li><em>how to tell an actor to turnLeft() and turnRight() using NORTH, SOUTH, EAST, WEST directions</em></li>
+					<li>how to stop a Greenfoot game (using Greenfoot.stop())</li>
+					<li>how to access the Greenfoot documentation to get help</li>
+				</ul>
+				<p><em>Items in italic are not specifically used here but you should have covered them in the last project</em></p> 
+
+				<p class="fcHeading">Learn how to use keys to move an actor in the world</p>
+				<ul class="objectives">				
+					<li>Open the tutorial page <span class="fcLink" onclick="openInNewTab('https://www.greenfoot.org/doc/tut-2')">Tutorial 2:  Movement and key control</span></li>
+					<li>You will be asked to download the Crabs scenario.  (<em><strong>Reminder:</strong> A <em>scenario</em> is a Greenfoot program and you will download the folder containing all the files you need to make this program</em>).</li>
+					<li>Store the modern_crab scenario in the same folder as you put the Wombats scenario. (<em><strong>Reminder:</strong> This could be in your Documents folder</em>).</li>
+					<li><img src="https://s3.eu-west-2.amazonaws.com/aws-futurecoders-files/PictureFiles+for+GitHub+Pages/Scenarios+Folder.PNG" alt="Scenarios Folder"/></li>
+					<li>Unzip the modern_crab scenario, it will be ready to use.</li>
+				</ul>				
+
+				<p>In Greenfoot, select Open... from the Scenario menu.  You might be asked to update the code (as you were for the wombats scenario), click yes to update your code.</p>
+
+				<div class="fcHeading-large">Follow the tutorial</div>
+				<p>Work through the tutorial to the end.  Before you go to the next tutorial have a go at this project:</p>
+
+				<p class="fcHeading">Space rocks game project</p>
+				<p>You are going to make a game that has a rocket called 'Crab' which you can control to explore space.  You can turn the Crab rocket left and right and it will float around space.  A set of space rocks are dotted around in space.</p>
+				<img src="https://s3.eu-west-2.amazonaws.com/aws-futurecoders-files/PictureFiles+for+GitHub+Pages/SpaceRocks.png" alt="Space Rocks Game" />
+				<p>When the Crab rocket hits a rock it destroys it (eats it).  The aim of the game is to remove all rocks from space.  When the last rock is removed then the game stops.  The code for this is: </p>
+				<div class="codeSnippet"><pre>				
+	if(getWorld().numberOfObjects() == 1){  
+	Greenfoot.stop();  
+	}  
+				</pre></div>
+				<p>Add it to the end of the act() method.</p>
+
+				<p><span class="fcHeading-large fcLink" onclick="scrollToTop()">Back to top</span></p>
+				<div class="divider"></div><hr/>
+			</div>
+
+			<!-------------------------------------------------------------------------------------------------->			
+			<!-- waterBug tutorial -->
+			<div id="waterBug" class="fcTutorialHeading"  >Water Bug project</div>
+			<div class="fcContent-tutorial">
+				<p class="fcHeading">Before you start you will need to know how to:</p>
+				<ul class="objectives">
+					<li>Open a scenario</li>
+					<li>Reset and run a scenario</li>
+					<li>Add code to the Act() method for an actor</li>
+					<li>Add code to call a method in a class</li>
+					<li>Write an 'if' statement</li>
+				</ul> 
+
+				<p class="fcHeading">You are going to make this game</p>
+				<img src="https://s3.eu-west-2.amazonaws.com/aws-futurecoders-files/PictureFiles+for+GitHub+Pages/waterBugGame.png" alt="waterBugGame" />
+				<p><span class="fcLink" onclick="openInNewTab('https://s3.eu-west-2.amazonaws.com/aws-futurecoders-files/PictureFiles+for+GitHub+Pages/bugs.jar')">Download and try out the waterBug game</span></p>
+
+				<strong>Instructions for playing game</strong>  
+				<p>Click Run</p>
+				<p>The WaterBug will start to move forward until it gets to the edge.</p> 
+				<p>The frog will chase the WaterBug and will eat it if it catches it.</p>
+				<p>You can control the WaterBug by using the left and right arrow keys.</p> 
+				<p>If the WaterBug hits a rock it will stop for a second and then the rock will disappear.</p> 
+				<p>Once the WaterBug has removed all the rocks it will become poisonous and when the frog catches it up, the frog will die.</p>  
+				<p>When the frog dies, the game ends.</p>
+
+				<p class="fcHeading">Build the game, following the instructions</p>
+				<p><span class="fcLink" onclick="openInNewTab('https://github.com/futureCodersSE/Coding-workshop-resources/tree/WaterBugGame')">Download the template scenario</span></p>
+
+				<p>Change the branch to WaterBugGame (see ringed area on left) and then Download the Zip file (click on Clone or Download, then click on Download ZIP) </p>
+				<img src="https://s3.eu-west-2.amazonaws.com/aws-futurecoders-files/PictureFiles+for+GitHub+Pages/gitHubBugsFolder.PNG" alt="Download from gitHub" />
+				<strong>When the folder has downloaded, unzip it, go into the Bugs folder and double click on the file project.greenfoot.</strong>
+				<p></p>
+				<p class="fcHeading">Exercise 1 - control the WaterBug</p>
+
+				<p>WaterBug action (in the Act() function):</p>
+				<ul class="objectives">
+					<li>move forward by 4</li>
+					<li>when the left arrow key is pressed, turn left by 3 degrees</li>
+					<li>when the right arrow key is pressed, turn left by 3 degrees</li>
+				</ul>
+				
+				<p>Reference for turning:</p>
+				<img src="https://s3.eu-west-2.amazonaws.com/aws-futurecoders-files/PictureFiles+for+GitHub+Pages/turnRightLeft.PNG" alt="WaterBug turn right and left" />
+				<p>Test for turning:</p>
+				<ol class="objectives">
+					<li>run the game and don't press any keys - the WaterBug should move forward and will get stuck at the right edge.</li>
+					<li>run the game and hold the left arrow key down - the WaterBug will move in an anti-clockwise circle.</li>
+					<li>run the game and press the right arrow key - the WaterBug will move in a clockwise circle.</li>
+					<li>run the game and use the right and left arrow keys to move the WaterBug.</li>
+				</ol>	
+
+				<p class="fcHeading">Exercise 2  - WaterBug stops at a Rock</p>
+
+				<p>Amend the WaterBugs Act() function so that it ONLY moves if it isn't touching a Rock </p> 
+
+				<p>Reference for moving only if not touching a Rock:</p>
+				<img src="https://s3.eu-west-2.amazonaws.com/aws-futurecoders-files/PictureFiles+for+GitHub+Pages/touchingRock.PNG" alt="Turn with arrow keys" />
+
+				<p>Test for moving only if not touching a Rock:</p>
+				<ol class="objectives">
+					<li>run the game and move the WaterBug to a Rock, it will stop when it hits the Rock.</li>
+					<li>run the game and move the WaterBug to another Rock, it will stop when it hits the Rock.</li>
+				</ol>	
+
+				<p class="fcHeading">Exercise 3 - Rock destroys itself when a WaterBug hits it</p>
+
+				<p>Rock action (in the Act() function):</p> 
+				<p><em>if a WaterBug is touching it, it will remove itself</em></p>
+
+				<p>Reference for a Rock to remove itself is a WaterBug is touching it:</p>
+				<img src="https://s3.eu-west-2.amazonaws.com/aws-futurecoders-files/PictureFiles+for+GitHub+Pages/RemoveRock.PNG" alt="Remove Rock" />
+				
+				<p>Test for Rock removing itself is a WaterBug touches it:</p>
+				<ol class="objectives">
+					<li>run the game and move the WaterBug to a Rock, the Rock disappears.</li>
+					<li>run the game and remove all Rocks.</li>
+				</ol>
+
+				<p class="fcHeading">Exercise 4 - Rock waits for a second before removing itself</p>
+				<p>Rock action (in the Act() function):</p>
+				<p><em>if a WaterBug is touching it, it will wait for a count of 50, then will remove itself</em></p>
+
+				<p>Reference for a Rock to wait:</p>
+				<img src="https://s3.eu-west-2.amazonaws.com/aws-futurecoders-files/PictureFiles+for+GitHub+Pages/timingRockRemoval.PNG" alt="Rock timer" />
+
+				<p>To be able to run the code with a timer, you will need to **declare a variable called timer, above the Act() method and set it to 50**  (Hint:  *int timer = 50;*).</p>  
+				<p>Test for Rock to wait for a count of 50 before removing itself:</p>
+				<ol class="objectives">
+					<li>run the game and move the WaterBug to a Rock, the Rock disappears after around a second.</li>
+					<li>run the game and remove all Rocks, there is a wait before each Rock disappears.</li>
+				</ol> 
+
+				<p class="fcHeading">Exercise 5 - Frog moves one space at a time</p>
+				<p>Add code to the Frog Act() to get it to move 1 space each time (Hint: *move(1)*).</p>
+				<p>Test for moving:</p>
+				<ol class="objectives">
+					<li>run the game, the Frog will move slowly forward.</li>
+				</ol>
+
+				<p class="fcHeading">Exercise 6 - Frog eats the WaterBug when it is the same space and the game stops.</p>
+				<p>The Frog will eat the WaterBug only when it is in the same space, not just touching the WaterBug.</p>  
+
+				<p>Reference:</p>
+				<img src="https://s3.eu-west-2.amazonaws.com/aws-futurecoders-files/PictureFiles+for+GitHub+Pages/FrogEatWaterBug.PNG" alt="Frog eats WaterBug" />
+				<p>Test for eating WaterBug and stopping game:</p>
+				<ol class="objectives">
+					<li>run the game, move the WaterBug to the Frog, when they collide the WaterBug will disappear and the game will stop.</li>
+				</ol>
+				
+				<p class="fcHeading">Exercise 7 - Frog can be poisoned by the WaterBug when all the Rocks are removed.</p>
+				<p>If all Rocks has been removed, then the WaterBug will poison the Frog and the game will stop.</p> 
+				<p>Reference:</p>
+				<img src="https://s3.eu-west-2.amazonaws.com/aws-futurecoders-files/PictureFiles+for+GitHub+Pages/RemoveFrogWhenNoRocks.PNG" alt="Remove Frog when no Rocks" />
+				<p>This will add the logic to the Act() method but it will not know what the line: if(noMoreRocks()){  means. </p> 
+				<p>You will need to add a new method noMoreRocks() before the final } of your program.</p>
+				<img src="https://s3.eu-west-2.amazonaws.com/aws-futurecoders-files/PictureFiles+for+GitHub+Pages/noMoreRocks.PNG" alt="No more Rocks" /> 
+
+				<p>Test for WaterBug poisoning Frog when all Rocks removed:</p>
+				<ol class="objectives">
+					<li>run the game, move the WaterBug to the Frog, the WaterBug will disappear and the game will stop (this is to test that this part still works).</li>
+					<li>run the game, use the WaterBug to remove all the Rocks, move WaterBug to Frog, the Frog will disappear and the game will stop.</li>
+				</ol>			
+
+				<p class="fcHeading">Exercise 8 - Frog turns towards the WaterBug so that it can move towards it.</p>
+				<p>Before the Frog moves or checks that the WaterBug is in the same space as it, it should turn towards the WaterBug.</p>
+				<p>Reference:</p>
+				<img src="https://s3.eu-west-2.amazonaws.com/aws-futurecoders-files/PictureFiles+for+GitHub+Pages/TurnToWaterBug.PNG" alt="Turn to WaterBug" />
+				<p>This is a new method and should be added to the bottom of your program, just above the last }.</p>
+				<p>You will need to add this line to the Act() method as the first thing that the Frog will do when it Acts - <strong>turnToWaterBug();</strong></p>  
+
+				<p>Test for Frog turning towards WaterBug before moving each time it Acts.</p>
+				<ol class="objectives">
+					<li>run the game, the Frog should immediately turn in the direction of the bug and as it moves it should keep changing direction to face the bug.</li>
+				</ol>
+				
+				<p class="fcHeading">Final testing</p>
+				<p>Test that all the tests in this page still work.</p>
+				<ol class="objectives">
+					<li>run the game and don't press any keys - the WaterBug should move forward and will get stuck at the right edge.</li>
+					<li>run the game and hold the left arrow key down - the WaterBug will move in an anti-clockwise circle.</li>
+					<li>run the game and press the right arrow key - the WaterBug will move in a clockwise circle.</li>
+					<li>run the game and use the right and left arrow keys to move the WaterBug.</li>
+					<li>run the game and move the WaterBug to a Rock, it will stop when it hits the Rock.</li>
+					<li>run the game and move the WaterBug to a Rock, the Rock disappears.</li>
+					<li>run the game and remove all Rocks.</li>
+					<li>run the game and move the WaterBug to a Rock, the Rock disappears after around a second.</li>
+					<li>run the game and remove all Rocks, there is a wait before each Rock disappears.</li>
+					<li>run the game, the Frog will move slowly forward.</li>
+					<li>run the game, move the WaterBug to the Frog, when they collide the WaterBug will disappear and the game will stop.</li>	
+					<li>run the game, move the WaterBug to the Frog, the WaterBug will disappear and the game will stop (this is to test that this part still works).</li>	
+					<li>run the game, use the WaterBug to remove all the Rocks, move WaterBug to Frog, the Frog will disappear and the game will stop.</li>	
+					<li>run the game, the Frog should immediately turn in the direction of the bug and as it moves it should keep changing direction to face the bug.</li>	
+				</ol>			
+
+				<p><span class="fcHeading-large fcLink" onclick="scrollToTop()">Back to top</span></p>
+				<div class="divider"></div><hr/>
+			</div>
+			
+			<!-------------------------------------------------------------------------------------------------->
+			<!-- mazeGame tutorial -->
+			<div id="mazeGame" class="fcTutorialHeading"  >Maze Game project</div>
+			<div class="fcContent-tutorial">
+				<div class="fcHeading-large">Project:  create a maze game   two players   work in pairs</div>
+				<p class="fcHeading">Get into groups of 2</p>
+				<p>To start with you should work individually.  Each of you should create the following game:</p>
+				<p>The world is called WormMaze</p>
+				<p>There are two actors, a worm and a shamrock</p>
+
+				<div class="fcHeading-large">Coder 1:</div>
+				<p>Your worm actor will be called GreenWorm.</p>
+				<p>Your worm will move when an arrow key has been pressed</p>
+				<ul class="objectives">
+					<li>up - the worm moves up and its image is set to green-worm-up.png</li>
+					<li>down - the worm moves down and its image is set to green-worm-down.png</li>
+					<li>left - the worm moves left and its image is set to green-worm-left.png</li>
+					<li>right - the worm moves right and its image is set to green-worm-right.png</li>
+				</ul> 				
+
+				<p>You will add two walls:</p>
+				<ul class="objectives">
+					<li>one wall is vertical and runs from (110, 0) to (110, 320)</li>
+					<li>one wall is horizontal and runs from (110, 320) to (300, 320)</li>
+				</ul>				
+ 
+				<p>The worm will not walk into a wall (only move if there is no wall in the space you want to move into - use the instruction if(getOneObjectAtOffset(0,1,Shamrock.class) == null){</p>
+
+				<div class="fcHeading-large">Coder 2:</div>
+
+				<p>Your worm actor will be called RedWorm.</p>
+				<p>Your worm will move when A,S,D,W has been pressed</p>
+				<ul class="objectives">
+					<li>W- the worm moves up and its image is set to green-worm-up.png</li>
+					<li>S- the worm moves down and its image is set to green-worm-down.png</li>
+					<li>A - the worm moves left and its image is set to green-worm-left.png</li>
+					<li>D- the worm moves right and its image is set to green-worm-right.png</li>					
+				</ul>
+				<p>You will add two walls:</p>
+				<ul class="objectives">
+					<li>one wall is vertical and runs from (490, 80) to (490, 400)</li>
+					<li>one wall is horizontal and runs from (300, 80) to (490, 80)</li>					
+				</ul>				
+
+				<div class="fcHeading-large">Both coders</div>
+				<p>When both worms are working correctly and you have tested  them thoroughly, combine both into the same game.  You should work together to add the red worm to the green worm game.</p>
+				<p>Test that both worms move (as a two player game).</p>
+				<p>THEN add some code to get the red worm to destroy the green worm if it catches it.</p>
+
+				<div class="fcHeading-large">Gamify</div> 
+				<p>Add a new actor, an apple, in the middle of the game board.  The first worm to eat the apple is the winner.</p>  
+
+				<div class="fcHeading-large">Further challenge</div> 
+				<p>There is an instruction in the world that can set the order in which actors act.  This could mean that one actor will destroy another actor first if they meet.  It just lists the classes in the order they should act.</p>    
+				<p>This instruction is written:  getWorld().setActOrder(RedWorm.class, GreenWorm.class);  if you want the RedWorm to eat the GreenWorm.  Could you use this when a worm eats the apple to get it to set itself as the first in the list of classes to act?</p>
+
+				<p><span class="fcHeading-large fcLink" onclick="scrollToTop()">Back to top</span></p>
+				<div class="divider"></div><hr/>
+			</div>			
+			
+			<!-------------------------------------------------------------------------------------------------->
+			<!-- links to How to guides -->
+			<div id="howTo" class="fcTutorialHeading"  >How To Guides</div>
+			<div class="fcContent-tutorial">
+				<p>This is a set of guides to coding a particular function in Greenfoot.  If you need to get an actor to turn, get an actor to detect the edge of the world, to move when direction keys are pressed, to destroy another actor, to spawn, etc.  There will be a guide here to help you to do this.</p>
+				<p><span class="fcLink" onclick="openModal('howToModal','getActorToTurn')">Getting an Actor to turn</span></p>
+				<p><span class="fcLink" onclick="openModal('howToModal','getActorToRemoveAnother')">Get an Actor to remove another Actor</p>
+				<p><span class="fcLink" onclick="openModal('howToModal','getActorToDestroyItself')">Get an Actor to destroy itself after a given amount of time</p>
+				<p><span class="fcLink" onclick="openModal('howToModal','getActorToMoveWithKeys')">Get an Actor to move in the direction of the arrow keys</p>
+				<p><span class="fcLink" onclick="openModal('howToModal','getActorToChangePicture')">Change an actor's picture</p>
+				<p><span class="fcLink" onclick="openModal('howToModal','createNew')">Create a new scenario, and a new Actor, from scratch</p>
+				<p><span class="fcLink" onclick="openModal('howToModal','addWall')">Create a wall of obstacles</p> 
+				<p><span class="fcHeading-large fcLink" onclick="scrollToTop()">Back to top</span></p>
+				<div class="divider"></div><hr/>
+			</div>	
+		</div>
+
+		<!-- footer area -->
+		<div class="fcFooter">
+			<div class="fcFooterCell fcFooterCell-left">
+				<p>Dragon Co-working, St George Hotel, 6-8 New Road Avenue, CHATHAM, Kent ME4 6BB</p>
+				<p>Contact phone:  07791 769048</p>
+			</div>
+			<div class="fcFooterCell fcFooterCell-centre"><img class="fcLogo fcLogo-footer" src="images/logos/fcLogo-v6a.png" alt="@futureCodersSE"/></div>	
+			<div class="fcFooterCell fcFooterCell-right">
+				<span class="fcHeading-xl"><span class="fcSocialLink" onclick = "openPage('intro')" ><i class="fa fa-home" aria-hidden="true"></i></span></span>
+			</div>
+		</div>
+		
+		<!-- modals -->
+		<div id="howToModal" class="fcModal">
+			<div class="fcModalHeader">
+				<span id="howToHeader" class="fcHeading-large"></span>
+				<span onclick="closeModal('howToModal')" class="fcModalButton"><b>&times;</b></span>								
+			</div>
+			<div id="howToContent" class="fcModalContent">
+			</div>		
+		</div>
+					
+<!-- scripts -->	
+	<script src="js/fcTutorialScript.js"></script>	
+</body>
+</html>

@@ -1,0 +1,86 @@
+/* global definitions */
+
+/* colours */
+$brand-primary:	#505050;
+$brand-secondary:#808080;
+$brand-tertiary:#B0B0B0;
+$brand-quad:#E0E0E0;
+$brand-button: #101010;
+$brand-nav:#101010;
+
+/* link formatting */
+$default-link: $brand-primary;
+
+/* fonts */
+$font-size-base:1rem;
+$font-size-xxl:1.6rem;
+$font-size-xl:1.4rem;
+$font-size-lg:1.2rem;
+$font-size-sm:	0.8rem;
+$font-size-xs:	0.6rem;
+$font-color-primary: #000000;
+$font-color-secondary: #FFFFFF;
+
+/* container size */
+$breakpoint-lg:	1200px;
+$breakpoint-md:	992px;
+$breakpoint-sm:	768px;
+$breakpoint-xs: 576px;
+
+/* borders */
+$border-primary:2px;
+
+$screen-width:100vw;
+$screen-height:100vh;
+@media all and (orientation:landscape) and (min-width:$breakpoint-lg){
+	$screen-width:$breakpoint-lg;
+	font-size:14pt;
+}
+@media all and (orientation:landscape) and (min-width:$breakpoint-md) and (max-width:$breakpoint-lg - 1){
+	$screen-width:$breakpoint-md;
+	font-size:12pt;
+}
+@media all and (orientation:landscape) and (min-width:$breakpoint-sm) and (max-width:$breakpoint-md - 1){
+	$screen-width:$breakpoint-sm;
+	font-size:10pt;
+}
+@media all and (orientation:landscape) and (min-width:$breakpoint-xs) and (max-width:$breakpoint-sm - 1){
+	$screen-width:$breakpoint-xs;
+	font-size:8pt;
+}
+@media all and (orientation:portrait){
+	font-size:8pt;
+}
+
+$main-width: ($screen-width * 0.98);
+$main-height: ($screen-height * 0.97);
+$header-height: ($main-height * 0.1);
+$content-height: ($main-height - $header-height);
+$intro-width: ($main-width * 0.5);
+$picPanel-width:($main-width * 0.5);
+$tile-width:($main-width * 0.2);
+$tile-height:($content-height * 0.4);
+$tile-margin:($main-width * 0.05);
+$footer-height: ($main-height * 0.1);
+/*remove these */
+$portrait-content-height:($main-height - $header-height);
+$content-panel-width:($main-width * 0.5);
+/*remove these */
+$modal-width:($main-width * 0.9);
+$modal-height:($main-height * 0.9);
+
+/* sass source */
+@import 'components/fcFullScreen';
+@import 'components/fcHeader';
+@import 'components/fcLogo';
+@import 'components/fcContent';
+@import 'components/fcFooter';
+@import 'components/fcHelpers';
+@import 'components/fcHeading';
+@import 'components/fcForm';
+@import 'components/fcText';
+@import 'components/fcLayout';
+@import 'components/fcLink';
+@import 'components/fcModal';
+@import 'components/fcPanel';
+@import 'components/fcOpportunities';

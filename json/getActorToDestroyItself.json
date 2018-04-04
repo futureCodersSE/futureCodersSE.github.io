@@ -1,0 +1,30 @@
+{
+  "title":"Get an actor to destroy itself after a delay",
+  "html": [
+     {"element":"<p>An Actor can destroy itself.  For example, it might be a bomb that needs to disappear after a count of 500.</p>"},
+     {"element":"<p>You can add code to an Actor to get it to destroy itself but be careful to make sure that no other Actors might destroy this one at the same time as your program will crash.</p>"},
+     {"element":"<p>A bomb might destroy another actor if they collide and can also destroy itself after a given amount of time.  Here is how to get the bomb to destroy itself.</p>"},
+     {"element":"<p class='fcHeading'>Add code to the Bomb to get it to destroy itself after a count of 500.</p>"},
+     {"element":"<p>First get the Bomb to destroy itself straight away.  To do this, add a Greenfoot instruction to ask the world to remove this object:</p>"},
+     {"element":"<p><em>getWorld().removeObject(this);</em></p>"},
+     {"element":"<p>Test for Bomb removing itself:  </p>"},
+     {"element":"<ol><li>Place a Bomb in the world.  Click the Play button.  The Bomb immediately disappears.</li></ol>"},
+     {"element":"<p class='fcHeading'>Add code to get the Bomb to add the timer.</p>"},
+     {"element":"<p>First you will need a timer variable.  This is a piece of member where a number is stored.  If you store the number in memory at the very start and then every time the Bomb acts, take one away from the number, then you can get the Bomb to destroy itself when the timer reaches zero.</p>"},
+     {"element":"<p>First, add the timer variable above the <em>act()</em> method</p>"},
+     {"element":"<pre>\n\tint timer = 500;\n\tpublic void act()\n\t{\n\t\tgetWorld().removeObject(this);\n\t}</pre>"},
+     {"element":"<p>Then add an instruction <strong>in</strong> the *act() method, to reduce the timer by 1 each time the Bomb acts.</p>"},
+     {"element":"<pre>\n\tint timer = 500;\n\tpublic void act()\n\t{\n\t\ttimer--;\n\t\tgetWorld().removeObject(this);\n\t}\n</pre>"},
+     {"element":"<p>Test for Bomb working with timer:</p>"},
+     {"element":"<ol><li>Place a Bomb in the world.  Click the Play button. The Bomb will still disappear immediately because you haven't yet told it to disappear only when the timer has run out.  (The program might eventually crash as the timer becomes a huge negative number).</li></ol>"},
+     {"element":"<p class='fcHeading'>Add code to get the Bomb to disappear only after a timer has counted down to 0.</p>"},
+     {"element":"<p>Lastly, add an <em>if</em> statement to get the Bomb to remove itself <strong>only</strong> after the timer has reached 0.</p>"},
+     {"element":"<p>It will look like this:</p>"},
+     {"element":"<pre>\n\tint timer = 500;\n\tpublic void act()\n\t{\n\t\ttimer--;\n\t\tif(timer == 0){\n\t\t\tgetWorld().removeObject(this);\n\t\t}\n\t}\n</pre>"},
+     {"element":"<p>and so the final code will look like this:</p>"},
+     {"element":"<pre>\n\tint timer = 5000;\n\tpublic void act()\n\t{\n\t\ttimer--;\n\t\tgetWorld().removeObject(this);\n\t}\n</pre>"},
+     {"element":"<p>Test for Bomb removing itself after a count of 50:</p>"},
+     {"element":"<ol><li>Place a Bomb in the world.  Click the Play button.  The Bomb will appear for a short time, then will disappear.</li></ol>"},
+     {"element":"<p><strong>TRY</strong> changing the timer to change the amount of time the Bomb is there before it disappears.</p>"}
+  ]
+}

@@ -1,0 +1,39 @@
+.fcEventList{
+	list-style-type:none;
+	padding:0;
+	width:($main-width * 0.8);
+	margin:auto;
+}
+
+.fcPostIt{
+	box-shadow:0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12);
+}
+
+.fcPostItHeader{
+	background-color:#dfdfdf;
+	text-align:center;
+}
+
+.fcPostItContent{
+}
+
+.fcFAQList{
+	list-style-type:none;
+	padding:0;
+	width:($main-width * 0.8);
+	margin:auto;
+}
+
+.fcFAQItem{
+	text-align:left;
+}
+
+.fcQuestion{
+	font-weight:bold;
+	color:#222222;
+	font-size:$font-size-lg;
+}
+
+.fcBuyButton{
+	max-width:($main-width * 0.3);
+}

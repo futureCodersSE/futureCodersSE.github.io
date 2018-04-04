@@ -1,0 +1,98 @@
+/* content part of page fits between header and footer borders and is 80% of window height */
+/* for landscape mode and auto height for portrait mode                                    */
+
+.fcContent{
+	width:$main-width;
+	padding-top:($header-height);
+	height:($main-height * 0.8);
+	text-align:center;
+	display:block;
+	@media all and (orientation:portrait){
+		height:auto;
+	}
+	&-intro{
+	}
+	&-linkPanel{
+		width:$main-width;
+		height:($main-height * 0.5);
+		@media all and (orientation:portrait){
+			height:auto;
+		}
+	}
+	&-infoBox{
+		width:($main-width * 0.5);
+		height:($main-height * 0.4);
+		padding-top:($main-height * 0.2);
+		@media all and (orientation:portrait){
+			width:$main-width;
+			height:auto;
+			padding-top:0;
+		}	
+	}
+	&-logoBox{
+		width:$main-width;
+		height:($main-height * 0.25);
+		@media all and (orientation:portrait){
+			width:$main-width;
+			height:auto;
+		}	
+	}	
+	&-picBox{
+		width:$main-width;
+		margin-left:auto;
+		margin-right:auto;
+		padding:($main-width * 0.02);
+		height:($main-height * 0.3);
+		overflow:hidden;
+		@media all and (orientation:portrait){
+			width:$main-width;
+			height:auto;
+		}
+		&::after{
+			clear:both;
+		}
+	}
+	&-image{
+		max-height:100%;
+		max-width:80%;
+		border-style:solid;
+		border-color:$brand-primary;
+		border-width:2px;
+		&-third{
+			max-width:$main-width;
+			height:auto;
+			@media all and (orientation:landscape){
+				float:left;
+				max-width:($main-width * 0.3);
+				padding:($main-width * 0.01);
+			}
+			&::after{
+				clear:both;
+			}
+		}
+	}
+	&-tutorial{
+		text-align:left;
+		padding-left:($main-width * 0.05);
+	}
+	&-tutorial p{
+		font-size:$font-size-base;
+	}
+	&-tutorial img{
+		margin-left:$main-width * 0.2;
+		max-width:$main-width * 0.6;
+		max-height:$content-height;
+		display:block;
+	}
+	&::before{
+		display:block;
+		content:"";
+	}
+}
+
+.hideOnMobile{
+	display:none;
+	@media all and (orientation:landscape){
+		display:block;
+	}
+}

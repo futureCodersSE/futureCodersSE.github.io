@@ -1,0 +1,26 @@
+{
+  "title":"Get an actor to remove another actor",
+  "html": [
+     {"element":"<p>To get an Actor to remove another Actor requires two things:</p>"},
+     {"element":"<ol><li>Detect that the other actor is in the same space as this one (ie it is touching)</li><li>Remove the other actor.</li></ol>"},
+     {"element":"<p>If the actors were a Ant and a Frog and the Frog is going to 'eat' the Ant then you would add the following code to the Frog's Act method:</p>"},
+     {"element":"<p>To get an Actor to remove another Actor requires two things:</p>"},
+     {"element":"<p class='fcHeading'>First, get the Frog to move</p>"},
+     {"element":"<p>Add the instruction to move into the Frog's Act method:</p>"},
+     {"element":"<p><em>move(4)</em></p>"},
+     {"element":"<p>Test for moving:</p>"},
+     {"element":"<ol><li>Add a Frog to the world, Click the play button.  The Frog should move in a straight line until it gets to the edge of the world, then stop.</li></ol>"},
+     {"element":"<p class='fcHeading'>Now add an Ant to the world</p>"},
+     {"element":"<p>Add a new Actor called Ant.  Place one Ant in the world where the Frog will move to it.</p>"},
+     {"element":"<p>Test for Frog moving to Ant:</p>"},
+     {"element":"<ol><li>Add a Frog to the world, add an Ant to the world in the Frog's path.  Click the play button.  The Frog should move in a straight line, moving through the Ant , until it gets to the edge of the world, then stop.</li></ol>"},
+     {"element":"<p class='fcHeading'>Add the code to get the Frog to remove the Ant when it is in the same space as it.</p>"},
+     {"element":"<p>Use the Greenfoot command, getOneObjectAtOffset(0,0, Ant.Class);</p>"},
+     {"element":"<p>This means *get a reference to any Ant that is in exactly the same space as me.</p>"},
+     {"element":"<p>Then if the Frog has detected that an Ant is in the same space, it will ask the world (getWorld()) to remove the Ant.</p>"},
+     {"element":"<img src='https://s3.eu-west-2.amazonaws.com/aws-futurecoders-files/PictureFiles+for+GitHub+Pages/GreenfootHow-Tos/FrogRemoveWaterBug.PNG' alt='Frog removes Ant' />"},
+     {"element":"<p>Test for Frog removing Ant:</p>"},
+     {"element":"<ol><li>Add a Frog to the world, add an Ant to the world in the Frog's path.  Click the play button.  The Frog should move in a straight line.  When it reaches the Ant , the Ant will disappear.  The Frog will keep moving until it gets to the edge of the world, then stop.</li></ol>"}
+  ]
+}
+

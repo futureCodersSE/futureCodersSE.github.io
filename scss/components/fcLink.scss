@@ -1,0 +1,57 @@
+.fcLink{
+	font-weight: bold;
+	cursor:pointer;
+	opacity:1;
+}
+.fcLink:hover{
+	opacity:0.3;
+}
+.fcLinkNav{
+	height:$header-height;
+	margin-right:($main-width * 0.05);
+	font-size:$font-size-sm;
+	&-icon{
+		font-size:$font-size-xl;
+	}
+}
+.fcEventsLink{
+	text-decoration: underline;
+	cursor:pointer;
+	opacity:1;
+	&:hover{
+		opacity:0.3;
+	}
+}
+.fcLogoLink{
+	opacity:1;
+}
+.fcLogoLink:hover{
+	opacity:0.3;
+}
+.fcFooterLink:hover{
+	color:$brand-primary;
+	font-weight:bold;
+}
+.fcSocialLink{
+	color:$brand-secondary;
+	font-size:$font-size-xl;
+	margin:2px;
+	&-large{
+		font-size:$font-size-xxl;
+	}
+}
+.fcSocialLink:hover{
+	opacity:0.3;
+}
+
+a.anchor{
+	color:#000000;
+	&::before{
+		display:block;
+		content:" ";
+		height:($header-height);
+		margin-top:($header-height * -1);
+		visibility:hidden;
+	}
+}
+	

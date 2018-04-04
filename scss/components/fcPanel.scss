@@ -1,0 +1,96 @@
+.fcPanel{
+	width:($main-width * 0.99);
+	margin:0px auto;
+	height:auto;
+	text-align:center;
+	&-left{
+		width:($main-width * 0.46);
+		padding:($main-width * 0.01);
+		margin:($main-width * 0.01);
+		float:left;
+		border-type:solid;
+		border-color:$brand-primary;
+		border-width:$border-primary;
+		overflow:auto;
+		@media all and (orientation:portrait){
+			width:($main-width * 0.98);
+		}
+	}		
+	&-right{
+		width:($main-width * 0.46);
+		float:right;
+		padding:($main-width * 0.01);
+		margin:($main-width * 0.01);
+		@media all and (orientation:portrait){
+			width:($main-width * 0.98);
+		}
+	}
+	&-image{
+		max-width:($main-width * 0.46);
+		@media all and (orientation:portrait){
+			max-width:($main-width * 0.98);
+		}			
+	}
+	&::after{
+		clear:both;
+	}
+}
+
+.panel{
+	width:($main-width * 0.99);
+	margin:0 auto;
+	height:auto;
+	text-align:center;
+	&-intro{
+		@media all and (orientation:landscape){
+			/*height:($main-height * 0.5);*/
+			height:auto;
+		}		
+	}
+	&-logo_{
+		@media all and (orientation:landscape){
+			height:($main-height * 0.2);
+			v-align:bottom;
+		}		
+	}
+	&-left{
+		width:($main-width * 0.23);
+		padding:($main-width * 0.01);
+		float:left;
+		border-type:solid;
+		border-color:$brand-primary;
+		border-width:$border-primary;
+		@media all and (orientation:portrait){
+			width:($main-width * 0.98);
+		}
+	}
+	&-centre{
+		width:($main-width * 0.23);
+		padding:($main-width * 0.01);
+		float:left;
+		border-type:solid;
+		border-color:$brand-primary;
+		border-width:$border-primary;
+		@media all and (orientation:portrait){
+			width:($main-width * 0.98);
+		}
+	}		
+	&-right{
+		width:($main-width * 0.46);
+		float:right;
+		padding:($main-width * 0.01);
+		@media all and (orientation:portrait){
+			width:($main-width * 0.98);
+		}		
+	}
+	&-image{
+		max-width:($main-width * 0.23);
+		display:inline;
+		@media all and (orientation:portrait){
+			max-width:($main-width * 0.98);
+		}			
+	}
+	&::after{
+		clear:both;
+	}
+}

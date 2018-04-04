@@ -1,0 +1,14 @@
+/* fit the window to the full height and width of the screen */
+
+.fullScreen{
+	width:$main-width;
+	height:auto;
+	margin:0 auto 0 auto;
+	padding:0;
+	overflow:hidden;
+	@media all and (orientation:portrait){
+		width:$main-width;
+		height:auto;
+		margin:0;
+	}
+}
